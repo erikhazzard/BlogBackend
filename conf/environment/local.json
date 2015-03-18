@@ -1,0 +1,15 @@
+{
+    "app": {
+        "port": 4000,
+        "portHttps": 4443,
+        "apiUrl": "localhost"
+    },
+    "database": {
+        "db": "mongodb://localhost/postbackend"
+    },
+    "s3": {
+        "key": "",
+        "secret": "",
+        "bucket": ""
+    }
+}
