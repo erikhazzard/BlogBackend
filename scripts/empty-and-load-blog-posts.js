@@ -74,7 +74,14 @@ function loadData(){
 
                     // Get rid of postData in original data string
                     data = data.replace(META_REGEX, '');
+
                     postData.content = data;
+
+                    // update meta fields
+                    postData.slug = postData.slug.toLowerCase();
+                    if(postData.created){
+                        postData.created = new Date(postData.created);
+                    }
 
                     // Setup the DB object
                     post = new Post(postData);
