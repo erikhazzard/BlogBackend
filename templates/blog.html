@@ -30,4 +30,14 @@ Blog
     </div>
 {{ } }}
 
+<h4>
+ALL TAGS
+</h4>
+
+{{ tags.forEach(function(tag){ }} 
+    <a href='/blog/tag/{{- util.toLower(tag) }}' target='_blank'>
+        {{- tag }}
+    </a>
+{{ }) }}
+
 {{ include _bottom.html }}
